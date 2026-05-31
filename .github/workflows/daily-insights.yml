@@ -1,0 +1,48 @@
+name: Daily MVP Insights
+
+on:
+  schedule:
+    # 每天早上 9:00（北京时间）运行
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generate daily insights
+        run: |
+          python3 scripts/generate_v10.py
+
+      - name: Commit and push report
+        run: |
+          git config user.name "OPC Insights Bot"
+          git config user.email "opc-insights-bot@users.noreply.github.com"
+          git add reports/
+          git commit -m "📅 Daily MVP Insights $(date '+%Y-%m-%d')" || echo "No new content"
+          git push || echo "Push skipped"
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report
+          path: reports/
+          retention-days: 30
