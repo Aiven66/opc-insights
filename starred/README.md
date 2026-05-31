@@ -30,7 +30,12 @@
 | 020 | AI图片放大无损 | UpscaleAI | 2026-05-17 | ★★★★☆ | 🟡 新增 | `N5-upscaleai.md` |
 | 021 | AI图片去水印 | WatermarkRemover | 2026-05-17 | ★★★★☆ | 🟡 新增 | `N6-watermark-remover.md` |
 | 026 | AI视频去水印工具 | **ClearReel** | 2026-05-20 | ★★★★☆ | 🟡 待开发 | `ClearReel-prd-v1.md` |
-| 025 | AI Skills发现平台 | **Skill Hunt** | 2026-05-20 | ★★★★☆ | 🟡 调研完成 | `SkillHunt-prd-v1.md` |
+| 028 | AI社媒文案生成器 | PostAI | 2026-05-31 | ★★★★★ | 🟡 待验证 | `H3-PostAI.md` |
+| 029 | AI音频去背景音 | CleanVoice | 2026-05-17 | ★★★★★ | 🟡 待验证 | `N4-cleanvoice.md` |
+| 030 | AI图片放大无损 | UpscaleAI | 2026-05-17 | ★★★★★ | 🟡 待验证 | `N5-upscaleai.md` |
+| 031 | 出海B2B报价助手 | QuoteBot | 2026-04-23 | ★★★★☆ | 🟡 待验证 | `E3-quote-bot.md` |
+| 032 | 独立开发者税务合规助手 | TaxFlow | 2026-04-23 | ★★★★☆ | 🟡 待验证 | `F3-tax-compliance-assistant.md` |
+| 033 | 微信SEO+公众号优化助手 | WeChatSEO | 2026-05-26 | ★★★★☆ | 🟡 待验证 | `K2-wechatseo.md` |
 
 ---
 

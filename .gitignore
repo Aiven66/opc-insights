@@ -38,7 +38,10 @@ env/
 *~
 
 # Data files
+# Specific large files
+mvp-kolify-*.md
 *.xlsx
+星标产品总览*.xlsx
 *.csv
 *.json
 !scripts/config.json
