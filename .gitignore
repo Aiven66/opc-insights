@@ -65,3 +65,7 @@ cache/
 .env
 .env.local
 gh_token*
+
+# Personal starred products (private notes)
+starred/
+starred/
